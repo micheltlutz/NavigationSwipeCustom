@@ -12,6 +12,8 @@
 		D074BC90208CBCC7005BC117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D074BC8E208CBCC7005BC117 /* Main.storyboard */; };
 		D074BC92208CBCC9005BC117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D074BC91208CBCC9005BC117 /* Assets.xcassets */; };
 		D074BC95208CBCC9005BC117 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D074BC93208CBCC9005BC117 /* LaunchScreen.storyboard */; };
+		D074BC9D208D73A3005BC117 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074BC9C208D73A3005BC117 /* SwipingController.swift */; };
+		D074BC9F208D79B4005BC117 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074BC9E208D79B4005BC117 /* PageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D074BC91208CBCC9005BC117 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D074BC94208CBCC9005BC117 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D074BC96208CBCC9005BC117 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D074BC9C208D73A3005BC117 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
+		D074BC9E208D79B4005BC117 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				D074BC91208CBCC9005BC117 /* Assets.xcassets */,
 				D074BC93208CBCC9005BC117 /* LaunchScreen.storyboard */,
 				D074BC96208CBCC9005BC117 /* Info.plist */,
+				D074BC9C208D73A3005BC117 /* SwipingController.swift */,
+				D074BC9E208D79B4005BC117 /* PageCell.swift */,
 			);
 			path = NavigationSwipeCustom;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				D074BC8D208CBCC7005BC117 /* ViewController.swift in Sources */,
 				D074BC8B208CBCC7005BC117 /* AppDelegate.swift in Sources */,
+				D074BC9F208D79B4005BC117 /* PageCell.swift in Sources */,
+				D074BC9D208D73A3005BC117 /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
