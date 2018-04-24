@@ -10,7 +10,20 @@ import UIKit
 
 class PageCell: UICollectionViewCell {
     
-    let bearImageView: UIImageView = {
+    var page: Page?  {
+        didSet{
+            guard let unrappedPage = page else { return }
+            bearImageView.image = UIImage(named: unrappedPage.imageName)
+            
+            let attribuitedText = NSMutableAttributedString(string: unrappedPage.headerText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
+            
+            attribuitedText.append(NSAttributedString(string: "\n\n\n\(unrappedPage.bodyText)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
+            descriptionTextView.attributedText = attribuitedText
+            descriptionTextView.textAlignment = .center
+        }
+    }
+    
+    private let bearImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "bear_first"))
         //habilita autolayout para a imagem
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -18,19 +31,12 @@ class PageCell: UICollectionViewCell {
         return imageView
     }()
     
-    let descriptionTextView: UITextView = {
+    private let descriptionTextView: UITextView = {
         let textView = UITextView()
-        
-        let attribuitedText = NSMutableAttributedString(string: "Acesse os jogos mais legais ainda hoje!", attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
-        
-        attribuitedText.append(NSAttributedString(string: "\n\n\nVocê está preparado para acessar os games mais irados do mundp?", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
-        
-        textView.attributedText = attribuitedText
+        textView.translatesAutoresizingMaskIntoConstraints = false
         textView.textAlignment = .center
         textView.isEditable = false
         textView.isScrollEnabled = false
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        
         return textView
     }()
     
