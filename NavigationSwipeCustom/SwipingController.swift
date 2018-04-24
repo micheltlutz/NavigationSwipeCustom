@@ -12,12 +12,9 @@ class SwipingController: UICollectionViewController {
     let cellId = "cellID"
     
     var pages: [Page] = [
-        Page(imageName: "bear_first", headerText: "Topo Texto 1", bodyText: "body Texto 1"),
-        Page(imageName: "heart_second", headerText: "Topo Texto 2", bodyText: "body Texto 2"),
-        Page(imageName: "leaf_third", headerText: "Topo Texto 3", bodyText: "body Texto 3"),
-        Page(imageName: "bear_first", headerText: "Topo Texto 4", bodyText: "body Texto 4"),
-        Page(imageName: "heart_second", headerText: "Topo Texto 5", bodyText: "body Texto 5"),
-        Page(imageName: "leaf_third", headerText: "Topo Texto 6", bodyText: "body Texto 6")
+        Page(imageName: "LOGO_COM_TEXTO", headerText: "Michel Lutz", bodyText: "http://micheltlutz.me"),
+        Page(imageName: "cingulo", headerText: "Cíngulo Autoconhecimento", bodyText: "https://www.cingulo.com"),
+        Page(imageName: "deliver", headerText: "Deliver IT Entregamos Valor", bodyText: "http://deliverit.com.br"),
     ]
     
     override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
@@ -35,21 +32,27 @@ class SwipingController: UICollectionViewController {
         
     }
     private let previousButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("PREV", for: .normal)
+        let button = UIButton(type: .custom)
+        //button.setTitle("<", for: .normal)
+        if let image = UIImage(named: "arrow_prev") {
+            button.setImage(image, for: .normal)
+        }
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.setTitleColor(.gray, for: .normal)
+        button.setTitleColor(UIColor(hex: "99CC00"), for: .normal)
         button.addTarget(self, action: #selector(handlePrev), for: .touchUpInside)
         return button
     }()
     
     private let nextButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("NEXT", for: .normal)
+        let button = UIButton(type: .custom)
+        //button.setTitle(">", for: .normal)
+        if let image = UIImage(named: "arrow_next") {
+            button.setImage(image, for: .normal)
+        }
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
-        button.setTitleColor(.mainPink, for: .normal)
+        button.setTitleColor(UIColor(hex: "99CC00"), for: .normal)
         button.addTarget(self, action: #selector(handleNext), for: .touchUpInside)
         return button
     }()
@@ -58,8 +61,9 @@ class SwipingController: UICollectionViewController {
         let pc = UIPageControl()
         pc.currentPage = 0
         pc.numberOfPages = pages.count
-        pc.currentPageIndicatorTintColor = .mainPink
-        pc.pageIndicatorTintColor = UIColor(red: 249/255, green: 207/255, blue: 224/255, alpha: 1)
+        pc.currentPageIndicatorTintColor = UIColor(hex: "99CC00")
+        pc.pageIndicatorTintColor = UIColor(hex: "BECC94")
+            //UIColor(red: 249/255, green: 207/255, blue: 224/255, alpha: 1)
         return pc
     }()
     

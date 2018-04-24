@@ -15,6 +15,7 @@
 		D074BC9D208D73A3005BC117 /* SwipingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074BC9C208D73A3005BC117 /* SwipingController.swift */; };
 		D074BC9F208D79B4005BC117 /* PageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D074BC9E208D79B4005BC117 /* PageCell.swift */; };
 		D0D876FC208E7FAD00CF8322 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D876FB208E7FAD00CF8322 /* Page.swift */; };
+		E012BF4D208F480A00CC2040 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E012BF4C208F480A00CC2040 /* UIColor+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D074BC9C208D73A3005BC117 /* SwipingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipingController.swift; sourceTree = "<group>"; };
 		D074BC9E208D79B4005BC117 /* PageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCell.swift; sourceTree = "<group>"; };
 		D0D876FB208E7FAD00CF8322 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		E012BF4C208F480A00CC2040 /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				D074BC93208CBCC9005BC117 /* LaunchScreen.storyboard */,
 				D074BC96208CBCC9005BC117 /* Info.plist */,
 				D074BC9C208D73A3005BC117 /* SwipingController.swift */,
+				E012BF4C208F480A00CC2040 /* UIColor+Hex.swift */,
 				D074BC9E208D79B4005BC117 /* PageCell.swift */,
 				D0D876FB208E7FAD00CF8322 /* Page.swift */,
 			);
@@ -147,6 +150,7 @@
 				D074BC8D208CBCC7005BC117 /* ViewController.swift in Sources */,
 				D074BC8B208CBCC7005BC117 /* AppDelegate.swift in Sources */,
 				D074BC9F208D79B4005BC117 /* PageCell.swift in Sources */,
+				E012BF4D208F480A00CC2040 /* UIColor+Hex.swift in Sources */,
 				D074BC9D208D73A3005BC117 /* SwipingController.swift in Sources */,
 				D0D876FC208E7FAD00CF8322 /* Page.swift in Sources */,
 			);

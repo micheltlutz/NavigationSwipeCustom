@@ -15,9 +15,9 @@ class PageCell: UICollectionViewCell {
             guard let unrappedPage = page else { return }
             bearImageView.image = UIImage(named: unrappedPage.imageName)
             
-            let attribuitedText = NSMutableAttributedString(string: unrappedPage.headerText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 18)])
+            let attribuitedText = NSMutableAttributedString(string: unrappedPage.headerText, attributes: [NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 20)])
             
-            attribuitedText.append(NSAttributedString(string: "\n\n\n\(unrappedPage.bodyText)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 13), NSAttributedStringKey.foregroundColor: UIColor.gray]))
+            attribuitedText.append(NSAttributedString(string: "\n\n\n\(unrappedPage.bodyText)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 16), NSAttributedStringKey.foregroundColor: UIColor.gray]))
             descriptionTextView.attributedText = attribuitedText
             descriptionTextView.textAlignment = .center
         }
